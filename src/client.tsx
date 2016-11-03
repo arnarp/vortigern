@@ -10,7 +10,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 const { ReduxAsyncConnect } = require('redux-connect');
 import configureStore from './store/configureStore';
 import 'isomorphic-fetch';
-import routes from './app/routes';
+import routes from './routes';
 
 const store = configureStore(
   browserHistory,

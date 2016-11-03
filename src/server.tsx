@@ -12,7 +12,7 @@ import { createMemoryHistory, match } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 const { ReduxAsyncConnect, loadOnServer } = require('redux-connect');
 import configureStore from './store/configureStore';
-import routes from './app/routes';
+import routes from './routes';
 
 import { Html } from './utils/Html';
 const manifest = require('../build/manifest.json');
