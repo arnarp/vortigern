@@ -1,5 +1,5 @@
-import { expect } from 'chai';
-import { renderComponent } from '../../helpers/TestHelper';
+import {  expect } from 'chai';
+import { renderComponent } from '../../../utils/TestHelper';
 import { Counter } from './index';
 
 /** Mock App. State */

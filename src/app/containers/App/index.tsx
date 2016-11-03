@@ -9,7 +9,7 @@ class App extends React.Component<any, any> {
 
     return (
       <section className={s.appContainer}>
-        <Helmet {...appConfig.app} {...appConfig.app.head}/>
+        <Helmet {...appConfig.app} {...appConfig.app.head} />
         <Header />
         {this.props.children}
       </section>
@@ -17,4 +17,4 @@ class App extends React.Component<any, any> {
   }
 }
 
-export { App }
+export { App }
