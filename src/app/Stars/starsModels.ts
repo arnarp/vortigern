@@ -1,5 +1,5 @@
 /** Type Definitions */
-export interface IStars {
+export interface IStarsState {
   isFetching?: boolean;
   count?: number;
   error?: boolean;

@@ -1,6 +1,6 @@
-import {  expect } from 'chai';
-import { renderComponent } from '../../../utils/TestHelper';
-import { Stars } from './index';
+import { expect } from 'chai';
+import { renderComponent } from '../../utils/TestHelper';
+import Stars from './Stars';
 
 /** Mock App. State */
 const state: Object = {
@@ -15,7 +15,7 @@ describe('<Counter />', () => {
   const component = renderComponent(Stars, state);
 
   it('Renders with correct style', () => {
-    const s = require('./style.css');
+    const s = require('./Stars.css');
     expect(component.find(s.stars)).to.exist;
   });
 

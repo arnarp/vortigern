@@ -1,7 +1,7 @@
 import * as React from 'react';
 const s = require('./style.css');
 
-class Home extends React.Component<any, any> {
+export default class Home extends React.Component<any, any> {
   public render() {
     return (
       <div className={s.home}>
@@ -11,5 +11,3 @@ class Home extends React.Component<any, any> {
     );
   }
 }
-
-export { Home }

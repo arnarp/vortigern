@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import { fetchMock, mockStore } from '../../../../utils/TestHelper';
-import * as stars from './';
-import { IStarsAction } from '../../../models/stars';
+import { fetchMock, mockStore } from '../../utils/TestHelper';
+import * as stars from './starsActions';
+import { IStarsAction } from './starsModels';
 
 /** Mock Data */
 const githubResponse = {

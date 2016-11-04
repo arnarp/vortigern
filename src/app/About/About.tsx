@@ -1,7 +1,7 @@
 import * as React from 'react';
-const s = require('./style.css');
+const s = require('./About.css');
 
-class About extends React.Component<any, any> {
+export default class About extends React.Component<any, any> {
   public render() {
     return (
       <div className={s.about}>
@@ -10,5 +10,3 @@ class About extends React.Component<any, any> {
     );
   }
 }
-
-export {  About }

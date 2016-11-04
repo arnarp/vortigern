@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { getStars } from '../../redux/modules/stars';
-import { IStars, IStarsAction } from '../../models/stars/';
+import { getStars } from './starsActions';
+import { IStarsState, IStarsAction } from './starsModels';
 const { connect } = require('react-redux');
 const { asyncConnect } = require('redux-connect');
 
 interface IProps {
-  stars: IStars;
+  stars: IStarsState;
   getStars: Redux.ActionCreator<IStarsAction>;
 }
 
@@ -17,7 +17,7 @@ interface IProps {
 @connect(
   state => ({ stars: state.stars })
 )
-class Stars extends React.Component<IProps, {}> {
+export default class Stars extends React.Component<IProps, {}> {
 
   public render() {
     const { stars } = this.props;
@@ -29,5 +29,3 @@ class Stars extends React.Component<IProps, {}> {
     );
   }
 }
-
-export { Stars }
