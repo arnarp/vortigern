@@ -1,5 +1,5 @@
-import { ICounterState, ICounterAction } from './counterModels';
-import { INCREMENT, DECREMENT } from './counterActions';
+import { ICounterState, ICounterAction } from './models';
+import { INCREMENT, DECREMENT } from './action.types';
 
 /** Counter: Initial State */
 const initialState: ICounterState = {

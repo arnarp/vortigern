@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import * as actions from './counterActions';
-import counterReducer from './counterReducer';
-import { ICounterState, ICounterAction } from './counterModels';
+import { INCREMENT, DECREMENT } from './action.types';
+import counterReducer from './reducer';
+import { ICounterState, ICounterAction } from './models';
 
 /** Module */
 describe('Counter Module', () => {
@@ -9,12 +9,12 @@ describe('Counter Module', () => {
     let state: ICounterState = { count: 10 };
 
     it('handles action of type INCREMENT', () => {
-      const action: ICounterAction = { type: actions.INCREMENT };
+      const action: ICounterAction = { type: INCREMENT };
       expect(counterReducer(state, action)).to.be.eql({ count: state.count + 1 });
     });
 
     it('handles action of type DECREMENT', () => {
-      const action: ICounterAction = { type: actions.DECREMENT };
+      const action: ICounterAction = { type: DECREMENT };
       expect(counterReducer(state, action)).to.be.eql({ count: state.count - 1 });
     });
 

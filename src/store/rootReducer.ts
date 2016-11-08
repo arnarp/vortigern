@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import { counterReducer } from '../app/counter';
-import { starsReducer } from '../app/stars';
+import counterReducer from '../app/counter/reducer';
+import starsReducer from '../app/stars/starsReducer';
 import { IStore } from './IStore';
 
 const { reducer } = require('redux-connect');
