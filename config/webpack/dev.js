@@ -6,7 +6,7 @@ var stylelint = require('stylelint');
 var ManifestPlugin = require('webpack-manifest-plugin');
 
 var config = {
-  devtool: 'eval',
+  devtool: 'source-map',
 
   debug: true,
 
