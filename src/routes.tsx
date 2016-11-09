@@ -3,7 +3,7 @@ import { IndexRoute, Route } from 'react-router';
 import Shell from './app/Shell';
 import Home from './app/Home';
 import About from './app/About';
-import Counter from './app/Counter';
+import Counter from './app/counter';
 import Stars from './app/Stars';
 
 export default (

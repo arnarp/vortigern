@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createIncrementAction, createDecrementAction } from './action.creators';
 import { ICounterState, ICounterAction } from './models';
 const { connect } = require('react-redux');
-const s = require('./Counter.css');
+const s = require('./counter.cmp.css');
 
 interface IProps {
   counter: ICounterState;

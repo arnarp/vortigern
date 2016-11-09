@@ -1,3 +1,3 @@
-import Counter from './Counter';
+import Counter from './counter.cmp';
 
 export default Counter;

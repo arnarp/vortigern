@@ -1,4 +1,4 @@
-import { ICounterState } from '../app/Counter/models';
+import { ICounterState } from '../app/counter/models';
 import { IStarsState } from '../app/Stars/starsModels';
 
 export interface IStore {
