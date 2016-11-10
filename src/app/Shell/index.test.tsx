@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { renderComponent } from '../../utils/TestHelper';
+import { renderComponent } from '../../utils/testHelpers';
 import Shell from './index';
 
 describe('<Shell />', () => {

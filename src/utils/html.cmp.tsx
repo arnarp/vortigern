@@ -8,7 +8,7 @@ interface IHtmlProps {
   store: Redux.Store<IStore>;
 }
 
-class Html extends React.Component<IHtmlProps, {}> {
+export default class Html extends React.Component<IHtmlProps, {}> {
   private resolve(files) {
     return files.map((src) => {
       if (this.props.manifest === undefined || !this.props.manifest[src]) { return; }
@@ -54,5 +54,3 @@ class Html extends React.Component<IHtmlProps, {}> {
     );
   }
 }
-
-export { Html }

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { fetchMock, mockStore } from '../../utils/TestHelper';
+import { fetchMock, mockStore } from '../../utils/testHelpers';
 import { getStars } from './stars.service';
 import IStarsAction from './actions';
 
