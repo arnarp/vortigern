@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { renderComponent } from '../../utils/TestHelper';
-import Stars from './Stars';
+import Stars from './stars.cmp';
 
 /** Mock App. State */
 const state: Object = {

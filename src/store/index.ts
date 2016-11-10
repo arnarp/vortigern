@@ -1,7 +1,9 @@
 import { ICounterState } from '../app/counter/models';
-import { IStarsState } from '../app/Stars/starsModels';
+import IStarsState from '../app/stars/state';
 
-export interface IStore {
+interface IStore {
   counter: ICounterState;
   stars: IStarsState;
 };
+
+export default IStore;

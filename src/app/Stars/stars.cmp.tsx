@@ -1,12 +1,11 @@
 import * as React from 'react';
-import { getStars } from './starsActions';
-import { IStarsState, IStarsAction } from './starsModels';
+import { getStars } from './stars.service';
+import IStarsState from './state';
 const { connect } = require('react-redux');
 const { asyncConnect } = require('redux-connect');
 
 interface IProps {
   stars: IStarsState;
-  getStars: Redux.ActionCreator<IStarsAction>;
 }
 
 @asyncConnect([{

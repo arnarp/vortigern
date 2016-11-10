@@ -3,7 +3,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 import thunk from 'redux-thunk';
 import rootReducer from './rootReducer';
-import { IStore } from './IStore';
+import IStore from './index';
 const createLogger = require('redux-logger');
 
 export default function configureStore(history, initialState?: IStore): Redux.Store<IStore> {

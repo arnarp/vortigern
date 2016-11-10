@@ -1,17 +1,17 @@
-import { IStore } from '../store/IStore';
+import IStore from '../store';
 import * as React from 'react';
 import * as Helmet from 'react-helmet';
 
 interface IHtmlProps {
   manifest?: Object;
-  markup?: string;
-  store?: Redux.Store<IStore>;
+  markup: string;
+  store: Redux.Store<IStore>;
 }
 
 class Html extends React.Component<IHtmlProps, {}> {
   private resolve(files) {
     return files.map((src) => {
-      if (!this.props.manifest[src]) { return; }
+      if (this.props.manifest === undefined || !this.props.manifest[src]) { return; }
       return '/public/' + this.props.manifest[src];
     }).filter((file) => file !== undefined);
   }

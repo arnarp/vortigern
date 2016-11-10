@@ -1,5 +1,5 @@
-import { IStarsState, IStarsAction } from './starsModels';
-import { GET_REQUEST, GET_SUCCESS, GET_FAILURE } from './starsActions';
+import IStarsState from './state';
+import IStarsAction from './actions';
 
 /** Initial State */
 const initialState: IStarsState = {
@@ -9,18 +9,18 @@ const initialState: IStarsState = {
 /** Reducer */
 export default function starsReducer(state = initialState, action: IStarsAction) {
   switch (action.type) {
-    case GET_REQUEST:
+    case 'stars/GET_STARS_REQUEST':
       return Object.assign({}, state, {
         isFetching: true,
       });
 
-    case GET_SUCCESS:
+    case 'stars/GET_STARS_SUCCESS':
       return Object.assign({}, state, {
         isFetching: false,
         count: action.payload.count,
       });
 
-    case GET_FAILURE:
+    case 'stars/GET_STARS_FAILURE':
       return Object.assign({}, state, {
         isFetching: false,
         message: action.payload.message,
