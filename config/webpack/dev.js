@@ -6,6 +6,7 @@ var stylelint = require('stylelint');
 var ManifestPlugin = require('webpack-manifest-plugin');
 
 var config = {
+  // Enable sourcemaps for debugging webpack's output.
   devtool: 'source-map',
 
   debug: true,
