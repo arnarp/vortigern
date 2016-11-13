@@ -1,16 +1,15 @@
-import { ICounterAction } from './models';
-import { INCREMENT, DECREMENT } from './action.types';
+import { IIncrementAction, IDecrementAction } from './actions';
 
 /** Action Creator: Increments the Counter */
-export function createIncrementAction(): ICounterAction {
+export function createIncrementAction(): IIncrementAction {
   return {
-    type: INCREMENT,
+    type: 'counter/INCREMENT',
   };
 }
 
 /** Action Creator: Decrements the Counter */
-export function createDecrementAction(): ICounterAction {
+export function createDecrementAction(): IDecrementAction {
   return {
-    type: DECREMENT,
+    type: 'counter/DECREMENT',
   };
 }

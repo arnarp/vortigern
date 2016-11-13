@@ -1,5 +1,5 @@
-import { ICounterState, ICounterAction } from './models';
-import { INCREMENT, DECREMENT } from './action.types';
+import ICounterState from './state';
+import ICounterAction from './actions';
 
 /** Counter: Initial State */
 const initialState: ICounterState = {
@@ -9,12 +9,12 @@ const initialState: ICounterState = {
 /** Reducer: CounterReducer */
 export default function counterReducer(state = initialState, action: ICounterAction) {
   switch (action.type) {
-    case INCREMENT:
+    case 'counter/INCREMENT':
       return {
         count: state.count + 1,
       };
 
-    case DECREMENT:
+    case 'counter/DECREMENT':
       return {
         count: ((state.count - 1 > 0) ? state.count - 1 : 0),
       };

@@ -16,7 +16,7 @@ describe('<Counter />', () => {
   });
 
   it('Renders with correct style', () => {
-    const s = require('./style.css');
+    const s = require('./counter.cmp.css');
     expect(component.find(s.counter)).to.exist;
   });
 

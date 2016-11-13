@@ -1,13 +1,20 @@
 import * as React from 'react';
-import { createIncrementAction, createDecrementAction } from './action.creators';
-import { ICounterState, ICounterAction } from './models';
+import {
+  createIncrementAction,
+  createDecrementAction
+} from './action.creators';
+import {
+  IIncrementAction,
+  IDecrementAction
+} from './actions';
+import ICounterState from './state';
 const { connect } = require('react-redux');
 const s = require('./counter.cmp.css');
 
 interface IProps {
   counter: ICounterState;
-  increment: Redux.ActionCreator<ICounterAction>;
-  decrement: Redux.ActionCreator<ICounterAction>;
+  increment: Redux.ActionCreator<IIncrementAction>;
+  decrement: Redux.ActionCreator<IDecrementAction>;
 }
 
 @connect(
