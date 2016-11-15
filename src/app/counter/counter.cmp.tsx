@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {
   createIncrementAction,
-  createDecrementAction
+  createDecrementAction,
 } from './action.creators';
 import {
   IIncrementAction,
-  IDecrementAction
+  IDecrementAction,
 } from './actions';
 import ICounterState from './state';
 const { connect } = require('react-redux');
