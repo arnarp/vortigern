@@ -1,13 +1,6 @@
-# Vortigern
-[![Build Status](https://travis-ci.org/barbar/vortigern.svg?branch=master)](https://travis-ci.org/barbar/vortigern)
-[![Dependency Status](https://david-dm.org/barbar/vortigern.svg)]()
-[![devDependency Status](https://david-dm.org/barbar/vortigern/dev-status.svg)]()
-[![Code Climate](https://codeclimate.com/github/barbar/vortigern/badges/gpa.svg)](https://codeclimate.com/github/barbar/vortigern)
-[![GitHub issues](https://img.shields.io/github/issues/barbar/vortigern.svg)](https://github.com/barbar/vortigern/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/barbar/vortigern/develop/LICENSE)
+# Vortigern / APB
+Opinionated branch of barbar/vortigern
 ___
-
-<img src="https://barbaruploads.s3.amazonaws.com/bicoz/vortigern.png" width="100%" />
 
 **Vortigern** is our opinionated boilerplate for crafting universal web applications by using modern technologies like TypeScript, React and Redux.
 
@@ -96,14 +89,11 @@ Vortigern uses the following libraries and tools:
 ├── node_modules                # Node Packages.
 ├── src                         # Source code.
 │   ├── app                     # App folder.
-│   │ ├── components            # React Components.
-│   │ ├── containers            # React/Redux Containers.
-│   │ ├── helpers               # Helper Functions & Components.
-│   │ ├── redux                 # Redux related code aka data layer of the app.
-│   │ │   ├── modules           # Redux modules.   
-│   │ │   ├── reducers.ts       # Main reducers file to combine them.  
-│   │ │   └── store.ts          # Redux store, contains global app state.    
-│   │ └── routes.tsx            # Routes.
+│   │ ├── shell                 # Shell component
+│   │ └── ...                   # other app modules
+│   ├── store                   # Redux store folder
+│   ├── utils                   # Folder for server/client utils
+│   ├── routes.tsx              # App root routes
 │   ├── client.tsx              # Entry point for client side rendering.
 │   └── server.tsx              # Entry point for server side rendering.
 ├── typings                     # Type definitions installed with typings.              
@@ -121,10 +111,8 @@ Vortigern uses the following libraries and tools:
 
 ## Installation
 
-You can clone from this repository or [install the latest version](https://github.com/barbar/vortigern/releases) as a zip file or a tarball. 
-
 ```bash
-$ git clone https://github.com/barbar/vortigern
+$ git clone https://github.com/arnarp/vortigern
 $ cd vortigern
 $ npm install
 ```
@@ -155,29 +143,3 @@ $ npm test
 ```
 
 For Windows users, we recommend using the shortcuts instead of setting environment variables because they work a little different on Windows.
-
-## Notes
-```bash
-# If you want install additional libraries, you can also install their typings from DefinitelyTyped
-$ typings install dt~<package> --global --save
-# or if it's located on npm
-$ typings install <package> --save
-```
-
-## Credits
-
-Vortigern is released under the [MIT license](LICENSE). 
-
-The image in this README belongs to [hhvferry.com](http://www.hhvferry.com/vortscrap.html).
-
-___
-
-## [Barbar Startup Factory](https://www.barbar.com.tr/?ref=vortigern)
-
-<a target="_blank" href="https://barbar.digital/?ref=vortigern-barbar-logo"><img src="https://barbaruploads.s3.amazonaws.com/bicoz/logo2x.png" height="55px" /></a>
-
-We help startups start and stay started by helping them plan, strategize, fund and execute their vision. 
-
-You can contact us at [hey@barbar.digital](mailto:hey@barbar.digital)
-
-Be sure to check out available [jobs at Barbar](https://github.com/barbar/hr).
