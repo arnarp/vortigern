@@ -1,9 +1,7 @@
 #!/bin/bash
 
 if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
-  pwd
-  ls
-  cd dist
+  cd build
   git init
 
   git config user.name "Travis CI"
