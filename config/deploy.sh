@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
+  pwd
   cd dist
   git init
 
