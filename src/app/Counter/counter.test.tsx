@@ -15,11 +15,6 @@ describe('<Counter />', () => {
     component = renderComponent(Counter, state);
   });
 
-  it('Renders with correct style', () => {
-    const s = require('./counter.cmp.css');
-    expect(component.find(s.counter)).to.exist;
-  });
-
   it('Renders header', () => {
     expect(component.find('h4').text()).to.eql('Counter Example');
   });
