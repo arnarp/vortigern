@@ -1,5 +1,5 @@
-import ICounterState from '../app/counter/state';
-import IStarsState from '../app/stars/state';
+import ICounterState from '../app/Counter/state';
+import IStarsState from '../app/Stars/state';
 
 interface IStore {
   counter: ICounterState;
