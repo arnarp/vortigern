@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $TRAVIS_BRANCH == 'master' ]] ; then
+if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   # cd dist
   git init
 
