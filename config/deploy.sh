@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
-  # cd dist
+  # cd build
   pwd
   git init
 
@@ -9,7 +9,7 @@ if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   git config user.email "arnarp@gmail.com"
 
   git add package.json
-  git add dist/*
+  git add build/*
   git commit -m "Deploy"
 
   # We redirect any output to
