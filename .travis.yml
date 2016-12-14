@@ -17,6 +17,6 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: config/deploy.sh
+  script: chmod +x config/deploy.sh && config/deploy.sh
   on:
     branch: prod
