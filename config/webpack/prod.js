@@ -10,6 +10,7 @@ var config = {
   bail: true,
 
   resolve: {
+    root: path.resolve(__dirname, '..'),
     extensions: ['', '.ts', '.tsx', '.js', '.jsx']
   },
 
