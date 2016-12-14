@@ -9,7 +9,7 @@ if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   git config user.email "arnarp@gmail.com"
 
   git add package.json
-  git add build/*
+  git add -f build/*
   git commit -m "Deploy"
 
   # We redirect any output to
