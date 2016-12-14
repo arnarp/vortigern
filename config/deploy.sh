@@ -7,7 +7,7 @@ if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   git config user.name "Travis CI"
   git config user.email "arnarp@gmail.com"
 
-  git add dist/\*
+  git add dist/*
   git add package.json
   git commit -m "Deploy"
 
