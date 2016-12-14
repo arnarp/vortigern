@@ -3,12 +3,13 @@
 if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   # cd build
   pwd
+  ls
   git init
 
   git config user.name "Travis CI"
   git config user.email "arnarp@gmail.com"
 
-  git add -f package.json
+  git add -f ./package.json
   git add -f build/*
   git status
   git commit -m "Deploy"
