@@ -14,4 +14,9 @@ before_script:
 script:
   - npm run build:prod
   - npm test
-
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: config/deploy.sh
+  on:
+    branch: master
