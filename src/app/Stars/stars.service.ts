@@ -15,7 +15,7 @@ export function getStars() {
             .then(res => dispatch(createGetStarsSuccessAction(res.stargazers_count)));
         } else {
           return res.json()
-            .then(res => dispatch(createGetStarsFailureAction(res)));
+            .then(res => dispatch(createGetStarsFailureAction(res.message)));
         }
       })
       .catch(err => dispatch(createGetStarsFailureAction(err)));

@@ -61,7 +61,11 @@ describe('Stars Module', () => {
         const store = mockStore({});
 
         store.dispatch(getStars())
-          .then(() => expect(store.getActions()).to.eql(expectedActions))
+          .then(() => {
+            console.log(store.getActions()[1]);
+            console.log(expectedActions[1]);
+            expect(store.getActions()).to.eql(expectedActions);
+          })
           .then(() => done())
           .catch(err => done(err));
       });
