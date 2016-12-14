@@ -9,8 +9,9 @@ if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   git config user.name "Travis CI"
   git config user.email "arnarp@gmail.com"
 
-  git add -f ./package.json
   git add -f build/*
+  git status
+  git add -f ./package.json
   git status
   git commit -m -a "Deploy"
   git status
