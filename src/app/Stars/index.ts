@@ -1,3 +1,3 @@
-import Stars from './stars.cmp';
+import Stars from './stars';
 
 export default Stars;

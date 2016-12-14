@@ -2,7 +2,7 @@ import {
   createGetStarsFailureAction,
   createGetStarsRequestAction,
   createGetStarsSuccessAction,
-} from './action.creators';
+} from './action-creators';
 
 export function getStars() {
   return dispatch => {

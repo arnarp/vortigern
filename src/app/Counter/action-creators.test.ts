@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import {
   createIncrementAction,
-  createDecrementAction } from './action.creators';
+  createDecrementAction } from './action-creators';
 import ICounterAction from './actions';
 
 /** Module */
