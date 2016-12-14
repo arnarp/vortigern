@@ -4,7 +4,7 @@ if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   # cd build
   pwd
   ls
-  git init
+  git init --bare
 
   git config user.name "Travis CI"
   git config user.email "arnarp@gmail.com"
