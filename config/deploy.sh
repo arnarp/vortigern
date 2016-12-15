@@ -9,7 +9,7 @@ if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
   git add -f build/*
   git add -f ./package.json
   git status
-  git commit -m -a "Deploy"
+  git commit -m "Deploy"
 
   # We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
