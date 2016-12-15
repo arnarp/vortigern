@@ -1,20 +1,16 @@
 #!/bin/bash
 
 if [[ $TRAVIS_BRANCH == 'prod' ]] ; then
-  # cd build
-  pwd
-  ls
+  rm -rf .git
   git init --bare
 
   git config user.name "Travis CI"
   git config user.email "arnarp@gmail.com"
 
   git add -f build/*
-  git status
   git add -f ./package.json
   git status
   git commit -m -a "Deploy"
-  git status
 
   # We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
