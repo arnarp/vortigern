@@ -5,7 +5,7 @@ export default class Home extends React.Component<any, any> {
   public render() {
     return (
       <div className={s.home}>
-        <img src={require('./barbar.png')} />
+        <img src={require('./fobarr.jpg')} />
         <p>Hello!</p>
       </div>
     );
