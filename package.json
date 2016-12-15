@@ -61,7 +61,7 @@
     "chai"
   ],
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@types/base16": "^1.0.1",
     "@types/chai": "^3.4.34",
     "@types/classnames": "0.0.31",
@@ -139,9 +139,7 @@
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.13.0",
-    "webpack-manifest-plugin": "^1.0.1"
-  },
-  "dependencies": {
+    "webpack-manifest-plugin": "^1.0.1",
     "es6-promise": "^4.0.5",
     "express": "^4.14.0",
     "history": "^4.3.0",
